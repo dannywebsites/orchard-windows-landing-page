@@ -1,0 +1,209 @@
+{
+  "metadata": {
+    "name": "Orchard",
+    "description": "Windows, Doors & Creative Living Spaces — Stamford's Own Since 2001",
+    "currency": "£",
+    "company": "Orchard Home Improvements",
+    "metaPixelId": "1643883153449501",
+    "instagramHandle": "https://www.facebook.com/orchardwindows",
+    "pageTitle": "Orchard — Windows, Doors & Creative Living Spaces | Stamford",
+    "pageDescription": "Orchard Home Improvements — Stamford's trusted window, door, and conservatory specialists for over 25 years. FENSA certified. 10-year guarantee. Visit our Tinwell showroom or arrange your free home survey today."
+  },
+  "theme": {
+    "colors": {
+      "primary": "#B89A3E",
+      "secondary": "#4A3C2F",
+      "accent": "#facc15",
+      "surface": "#FDFDFD",
+      "text": "#111827"
+    },
+    "radius": "1.5rem",
+    "font": "Inter"
+  },
+  "header": {
+    "logoImage": "/images/logo.png",
+    "logoIcon": "Home",
+    "label": "ORCHARD",
+    "subLabel": "Windows | Doors | Creative Living Spaces",
+    "bgColor": "#ffffff",
+    "textColor": "#111827"
+  },
+  "hero": {
+    "headline": "Arrange your FREE <span style='color:#B89A3E'>Home Survey</span> with Stamford's most trusted team for 25 years",
+    "subheadline": "5.0 customer reviews",
+    "mainImage": "/images/hero-main.jpg",
+    "secondaryImage": "/images/quiz-warmroof.jpg",
+    "tertiaryImage": "/images/quiz-orangery.jpg",
+    "cta": {
+      "headline": "<span style='color:#B89A3E'>Windows, Doors, and Conservatories</span><br/>Want a free, no-obligation home survey?",
+      "subtext": "Tap a button below ↓",
+      "yesLabel": "YES PLEASE",
+      "noLabel": "NO THANKS"
+    },
+    "benefits": [
+      {
+        "title": "25 Years of Trust",
+        "text": "Stamford's own since 2001. FENSA certified with a 10-year insurance-backed guarantee on every installation.",
+        "icon": "ShieldCheck"
+      },
+      {
+        "title": "Visit Our Showroom",
+        "text": "See windows, doors, and living spaces in person at Tinwell Business Park — no appointment needed.",
+        "icon": "Home"
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "introHeading": "Your Home Deserves Better",
+    "intro": [
+      "Draughty windows that rattle in the wind. Misted double glazing you've been meaning to sort for years. A conservatory that's freezing in December and a greenhouse in July. Sound familiar?",
+      "Every month you wait, you're paying to heat the outside — and putting up with a home that doesn't look or feel the way it should. The national companies will send a salesman who won't leave your kitchen for three hours. The one-man-bands will promise the world and never call back.",
+      "Orchard has been transforming homes across Stamford, Rutland, and Peterborough for <span class='font-bold underline'>over 25 years</span>. No scripts. No pressure. Just honest advice from Mark, a fixed price on one page, and a 10-year guarantee on every installation. Visit our Tinwell showroom or book a free home survey — and see the difference for yourself."
+    ],
+    "headline": "Why Stamford Homeowners Choose Orchard",
+    "items": [
+      {
+        "text": "<span class='font-bold text-gray-900'>25 years in Stamford</span> — your neighbours' most trusted home improvement company, with a 10-year insurance-backed guarantee.",
+        "icon": "ShieldCheck"
+      },
+      {
+        "text": "<span class='font-bold text-gray-900'>No-pressure home surveys</span> — Mark visits, gives honest advice, and leaves you a fixed price on one page. No hard sell.",
+        "icon": "Clock"
+      },
+      {
+        "text": "<span class='font-bold text-gray-900'>Tinwell showroom</span> — touch the products, compare materials, and decide with confidence before you commit.",
+        "icon": "Home"
+      },
+      {
+        "text": "<span class='font-bold text-gray-900'>FENSA certified</span> — every window and door installation meets the highest building regulation standards.",
+        "icon": "Award"
+      }
+    ],
+    "cta": "Get your FREE home survey"
+  },
+  "quiz": {
+    "steps": [
+      {
+        "id": 1,
+        "type": "image-grid",
+        "question": "What are you looking to improve?",
+        "options": [
+          {
+            "id": "windows",
+            "label": "Windows",
+            "image": "/images/quiz-windows.jpg"
+          },
+          {
+            "id": "doors",
+            "label": "Doors",
+            "image": "/images/quiz-doors.jpg"
+          },
+          {
+            "id": "conservatory-roof",
+            "label": "Conservatory Roof",
+            "image": "/images/quiz-warmroof.jpg"
+          },
+          {
+            "id": "orangery-extension",
+            "label": "Orangery / Extension",
+            "image": "/images/quiz-orangery.jpg"
+          },
+          {
+            "id": "other",
+            "label": "Other",
+            "image": "/images/quiz-other.jpg"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "type": "list",
+        "question": "What's your main reason for upgrading?",
+        "options": [
+          { "id": "draughts-energy", "label": "My windows or doors are old and draughty" },
+          { "id": "kerb-appeal", "label": "I want to improve my home's kerb appeal" },
+          { "id": "conservatory", "label": "My conservatory is too hot in summer or too cold in winter" },
+          { "id": "security", "label": "I need better home security" },
+          { "id": "other", "label": "Other" }
+        ]
+      },
+      {
+        "id": 3,
+        "type": "list",
+        "question": "When are you looking to get started?",
+        "options": [
+          { "id": "asap", "label": "As soon as possible" },
+          { "id": "1-month", "label": "Within the next month" },
+          { "id": "1-3-months", "label": "Within 1–3 months" },
+          { "id": "exploring", "label": "Just exploring my options" },
+          { "id": "other", "label": "Other" }
+        ]
+      },
+      {
+        "id": 4,
+        "type": "binary",
+        "question": "Are you based in Stamford, Rutland, or the surrounding areas?",
+        "subtext": "We serve homeowners across Stamford, Rutland, Peterborough, and surrounding Lincolnshire and Cambridgeshire.",
+        "options": [
+          { "id": "yes", "label": "Yes", "icon": "Check" },
+          { "id": "no", "label": "No", "icon": "X" }
+        ]
+      }
+    ]
+  },
+  "socialProof": {
+    "reviews": [
+      {
+        "id": 1,
+        "name": "R. Cutts",
+        "text": "Very professional and courteous. We wouldn't hesitate to recommend Orchard to family and friends.",
+        "rating": 5
+      },
+      {
+        "id": 2,
+        "name": "J. Corby",
+        "text": "Polite, clean, and tidy. The team were friendly and professional — a real credit to the company.",
+        "rating": 5
+      },
+      {
+        "id": 3,
+        "name": "Sarah M.",
+        "text": "Our energy bills dropped noticeably after the new windows. The house feels warmer, quieter, and looks ten years newer.",
+        "rating": 5
+      },
+      {
+        "id": 4,
+        "name": "David P.",
+        "text": "Mark gave us honest advice with no hard sell. One price, one page — refreshing after our experience with a national company.",
+        "rating": 5
+      }
+    ],
+    "featuredIn": {
+      "label": "As Featured In",
+      "count": 5
+    }
+  },
+  "pages": {
+    "thankYou": {
+      "heading": "You're almost there",
+      "message": "Enter your details below so we can arrange your free, no-obligation home survey.",
+      "successHeading": "You're all set",
+      "successMessage": "Thanks — a member of the Orchard team will be in touch shortly to arrange your free home survey.",
+      "submitLabel": "Book My Free Survey",
+      "webhookUrl": "https://services.leadconnectorhq.com/hooks/iLZ1Reez9OCIdXjxTjGp/webhook-trigger/39afb292-0a58-44f1-a8a6-8d1224ab68cb"
+    },
+    "notInArea": {
+      "heading": "We're not in your area just yet",
+      "message": "We currently serve homeowners across Stamford, Rutland, Peterborough, and surrounding areas. Follow us on Facebook to stay updated — we may be expanding to your area soon.",
+      "ctaLabel": "Follow us on Facebook"
+    }
+  },
+  "footer": {
+    "links": [
+      { "label": "Terms of use", "href": "#" },
+      { "label": "Privacy policy", "href": "/privacy-policy.html" },
+      { "label": "Cookie policy", "href": "/cookie-policy.html" }
+    ],
+    "copyright": "© 2026 Orchard Home Improvements. All rights reserved."
+  }
+}

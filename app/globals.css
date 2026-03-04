@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #B89A3E;
+  --secondary: #4A3C2F;
+  --accent: #facc15;
+  --surface: #FDFDFD;
+  --text-color: #111827;
+  --radius: 1.5rem;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-surface: var(--surface);
+  --color-text: var(--text-color);
+  --radius-brand: var(--radius);
+}
+
+body {
+  background: var(--surface);
+  color: var(--text-color);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+}

@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx claude-code-templates@latest --skill business-marketing/copywriting)",
+      "Bash(ls -la \"/Users/danny/Desktop/insulate market using clients'' GitHub/Templated landing page in Slate Market/\"*.md)",
+      "Bash(lsof -i :3000 -i :3001)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/not-in-area)",
+      "Bash(lsof -i :3000 -t)",
+      "Bash(kill -9 20234 29568 30381)"
+    ],
+    "additionalDirectories": [
+      "/Users/danny/Desktop/insulate market using clients'' GitHub/Templated landing page in Slate Market",
+      "/Users/danny/Desktop/insulate market using clients'' GitHub/Templated landing page in Slate Market/insulation-market-landing-pages-clients/app",
+      "/Users/danny/.claude/projects/-Users-danny-Desktop-insulate-market-using-clients--GitHub-Templated-landing-page-in-Slate-Market"
+    ]
+  }
+}
