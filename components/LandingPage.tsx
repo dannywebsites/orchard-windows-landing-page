@@ -66,13 +66,13 @@ export default function LandingPage() {
         </header>
 
         {/* ── Hero ── */}
-        <section className="max-w-3xl mx-auto px-4 mt-2.5 md:mt-2 pb-2 text-center flex flex-col">
+        <section className="max-w-3xl mx-auto px-4 mt-1 md:mt-2 pb-2 text-center flex flex-col">
           <h1
             className="text-base md:text-3xl lg:text-4xl font-black mb-1 md:mb-3 leading-tight"
             dangerouslySetInnerHTML={{ __html: data.hero.headline }}
           />
 
-          <p className="text-sm md:text-lg font-black md:font-semibold text-primary mb-0.5 md:mb-3">
+          <p className="text-sm md:text-lg font-black md:font-semibold text-primary mb-0 md:mb-3">
             Windows, Doors and Conservatories
           </p>
 
@@ -84,7 +84,7 @@ export default function LandingPage() {
               fetchPriority="high"
               width={1200}
               height={670}
-              className="w-full h-[288px] md:h-[281px] lg:h-[338px] object-cover"
+              className="block w-full h-[288px] md:h-[281px] lg:h-[338px] object-cover"
             />
           </div>
 
@@ -197,7 +197,7 @@ export default function LandingPage() {
           </div>
 
           {/* Secondary image */}
-          <div className="rounded-2xl overflow-hidden shadow-xl mb-8 md:order-6">
+          <div className="hidden md:block rounded-2xl overflow-hidden shadow-xl mb-8 md:order-6">
             <img
               src={data.hero.secondaryImage}
               alt={data.metadata.name}
@@ -209,6 +209,17 @@ export default function LandingPage() {
             />
           </div>
         </section>
+
+        {/* ── Mobile CTA (below reviews) ── */}
+        <div className="md:hidden text-center px-4 mb-8">
+          <button
+            onClick={() => setQuizOpen(true)}
+            className="inline-block text-white px-10 py-4 rounded-lg font-bold text-lg transition-colors cursor-pointer w-full"
+            style={{ backgroundColor: "#1a1a1a" }}
+          >
+            {data.whyChooseUs.cta}
+          </button>
+        </div>
 
         {/* ── Why Choose Us ── */}
         <section className="py-10 md:py-16">
@@ -268,6 +279,21 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
+
+        {/* ── Secondary image (mobile) ── */}
+        <div className="md:hidden px-4 mb-8">
+          <div className="rounded-2xl overflow-hidden shadow-xl">
+            <img
+              src={data.hero.secondaryImage}
+              alt={data.metadata.name}
+              loading="lazy"
+              decoding="async"
+              width={800}
+              height={838}
+              className="w-full object-contain"
+            />
+          </div>
+        </div>
 
         {/* ── Footer ── */}
         <footer className="mt-auto py-8 text-center">
