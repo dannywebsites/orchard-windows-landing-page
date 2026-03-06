@@ -171,8 +171,19 @@ export default function LandingPage() {
             </div>
           </div>
 
+          {/* ── Mobile CTA (below stars, above reviews) ── */}
+          <div className="md:hidden text-center mb-4 order-3">
+            <button
+              onClick={() => setQuizOpen(true)}
+              className="inline-block text-white px-10 py-4 rounded-lg font-bold text-lg transition-colors cursor-pointer w-full"
+              style={{ backgroundColor: "#1a1a1a" }}
+            >
+              {data.whyChooseUs.cta}
+            </button>
+          </div>
+
           {/* ── Inline Reviews (below the fold) ── */}
-          <div className="space-y-3 mb-8 md:order-7">
+          <div className="space-y-3 mb-8 order-4 md:order-7">
             {data.socialProof.reviews.slice(0, 3).map((review) => (
               <div
                 key={review.id}
@@ -209,17 +220,6 @@ export default function LandingPage() {
             />
           </div>
         </section>
-
-        {/* ── Mobile CTA (below reviews) ── */}
-        <div className="md:hidden text-center px-4 mb-8">
-          <button
-            onClick={() => setQuizOpen(true)}
-            className="inline-block text-white px-10 py-4 rounded-lg font-bold text-lg transition-colors cursor-pointer w-full"
-            style={{ backgroundColor: "#1a1a1a" }}
-          >
-            {data.whyChooseUs.cta}
-          </button>
-        </div>
 
         {/* ── Why Choose Us ── */}
         <section className="py-10 md:py-16">
