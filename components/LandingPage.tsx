@@ -72,19 +72,19 @@ export default function LandingPage() {
             dangerouslySetInnerHTML={{ __html: data.hero.headline }}
           />
 
-          <p className="text-sm md:text-lg font-black md:font-semibold text-primary mb-1 md:mb-3">
+          <p className="text-sm md:text-lg font-black md:font-semibold text-primary mb-0.5 md:mb-3">
             Windows, Doors and Conservatories
           </p>
 
           {/* Hero image */}
-          <div className="rounded-2xl overflow-hidden shadow-xl mb-0 md:mb-4">
+          <div className="rounded-none md:rounded-2xl overflow-hidden shadow-none md:shadow-xl mb-0 md:mb-4">
             <img
               src={data.hero.mainImage}
               alt={data.metadata.name}
               fetchPriority="high"
               width={1200}
               height={670}
-              className="w-full h-[288px] md:h-[281px] lg:h-[338px] object-contain md:object-cover"
+              className="w-full h-[288px] md:h-[281px] lg:h-[338px] object-cover"
             />
           </div>
 
