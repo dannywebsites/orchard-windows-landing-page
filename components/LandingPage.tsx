@@ -77,7 +77,7 @@ export default function LandingPage() {
           </p>
 
           {/* Hero image */}
-          <div className="rounded-2xl overflow-hidden shadow-none md:shadow-xl mb-0 md:mb-4 -mx-4 md:mx-0">
+          <div className="rounded-2xl overflow-hidden shadow-xl mb-0 md:mb-4">
             <img
               src={data.hero.mainImage}
               alt={data.metadata.name}
