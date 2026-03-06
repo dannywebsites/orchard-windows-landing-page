@@ -172,7 +172,7 @@ export default function LandingPage() {
           </div>
 
           {/* ── Mobile CTA (below stars, above reviews) ── */}
-          <div className="md:hidden text-center mb-4 order-3">
+          <div className="md:hidden text-center mb-4 order-5">
             <button
               onClick={() => setQuizOpen(true)}
               className="inline-block text-white px-10 py-4 rounded-lg font-bold text-lg transition-colors cursor-pointer w-full"
