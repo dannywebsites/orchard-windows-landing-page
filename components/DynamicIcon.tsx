@@ -1,4 +1,9 @@
-import * as Icons from "lucide-react";
+import type { LucideProps } from "lucide-react";
+import { Check, X, ShieldCheck, Clock, Home, Award, ClipboardList, Instagram } from "lucide-react";
+
+const iconMap: Record<string, React.ComponentType<LucideProps>> = {
+  Check, X, ShieldCheck, Clock, Home, Award, ClipboardList, Instagram,
+};
 
 export const DynamicIcon = ({
   name,
@@ -9,8 +14,7 @@ export const DynamicIcon = ({
   className?: string;
   style?: React.CSSProperties;
 }) => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const IconComponent = (Icons as any)[name];
+  const IconComponent = iconMap[name];
   if (!IconComponent) return null;
   return <IconComponent className={className} style={style} />;
 };

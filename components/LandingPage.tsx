@@ -92,9 +92,9 @@ export default function LandingPage() {
           <div className="flex items-center justify-center gap-2 mt-1 md:mt-8 order-2 md:order-5 mb-8 md:mb-0">
             <div className="flex -space-x-2">
               {[
-                "https://i.pravatar.cc/40?img=1",
-                "https://i.pravatar.cc/40?img=2",
-                "https://i.pravatar.cc/40?img=3",
+                "/images/avatar-1.webp",
+                "/images/avatar-2.webp",
+                "/images/avatar-3.webp",
               ].map((src, i) => (
                 <img
                   key={i}
