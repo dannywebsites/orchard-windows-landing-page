@@ -43,6 +43,8 @@ export default function QuizOverlay({ onClose }: { onClose: () => void }) {
             <img
               src={data.header.logoImage}
               alt={data.metadata.name}
+              width={549}
+              height={209}
               className="h-[93px] md:h-[116px] w-auto object-contain"
             />
           ) : (
@@ -103,6 +105,8 @@ export default function QuizOverlay({ onClose }: { onClose: () => void }) {
                         <img
                           src={opt.image as string}
                           alt={opt.label}
+                          width={624}
+                          height={624}
                           className="aspect-square object-cover w-full group-hover:scale-105 transition-transform duration-300"
                         />
                       )}

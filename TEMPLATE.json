@@ -21,7 +21,7 @@
     "font": "Inter"
   },
   "header": {
-    "logoImage": "/images/logo.png",
+    "logoImage": "/images/logo.webp",
     "logoIcon": "Home",
     "label": "ORCHARD",
     "subLabel": "Windows | Doors | Creative Living Spaces",
@@ -31,9 +31,9 @@
   "hero": {
     "headline": "Arrange your FREE <span style='color:#B89A3E'>Home Survey</span> with Stamford's most trusted team for 25 years",
     "subheadline": "5.0 customer reviews",
-    "mainImage": "/images/hero-main.jpg",
-    "secondaryImage": "/images/quiz-warmroof.jpg",
-    "tertiaryImage": "/images/quiz-orangery.jpg",
+    "mainImage": "/images/hero-main.webp",
+    "secondaryImage": "/images/quiz-warmroof.webp",
+    "tertiaryImage": "/images/quiz-orangery.webp",
     "cta": {
       "headline": "<span style='color:#B89A3E'>Windows, Doors, and Conservatories</span><br/>Want a free, no-obligation home survey?",
       "subtext": "Tap a button below ↓",
@@ -91,27 +91,27 @@
           {
             "id": "windows",
             "label": "Windows",
-            "image": "/images/quiz-windows.jpg"
+            "image": "/images/quiz-windows.webp"
           },
           {
             "id": "doors",
             "label": "Doors",
-            "image": "/images/quiz-doors.jpg"
+            "image": "/images/quiz-doors.webp"
           },
           {
             "id": "conservatory-roof",
             "label": "Conservatory Roof",
-            "image": "/images/quiz-warmroof.jpg"
+            "image": "/images/quiz-warmroof.webp"
           },
           {
             "id": "orangery-extension",
             "label": "Orangery / Extension",
-            "image": "/images/quiz-orangery.jpg"
+            "image": "/images/quiz-orangery.webp"
           },
           {
             "id": "other",
             "label": "Other",
-            "image": "/images/quiz-other.jpg"
+            "image": "/images/quiz-other.webp"
           }
         ]
       },

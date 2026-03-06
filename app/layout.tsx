@@ -21,7 +21,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head />
+      <head>
+        <link
+          rel="preload"
+          as="image"
+          href="/images/hero-main.webp"
+          type="image/webp"
+        />
+      </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         {children}
       </body>

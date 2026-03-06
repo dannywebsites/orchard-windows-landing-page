@@ -21,6 +21,8 @@ export default function NotInAreaPage() {
             <img
               src={data.header.logoImage}
               alt={data.metadata.name}
+              width={549}
+              height={209}
               className="h-[93px] md:h-[116px] w-auto object-contain"
             />
           ) : (

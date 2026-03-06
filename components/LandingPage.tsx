@@ -42,6 +42,8 @@ export default function LandingPage() {
               <img
                 src={data.header.logoImage}
                 alt={data.metadata.name}
+                width={549}
+                height={209}
                 className="h-[65px] md:h-[81px] w-auto object-contain"
               />
             ) : (
@@ -92,6 +94,9 @@ export default function LandingPage() {
             <img
               src={data.hero.mainImage}
               alt={data.metadata.name}
+              fetchPriority="high"
+              width={800}
+              height={447}
               className="w-full h-[288px] md:h-[281px] lg:h-[338px] object-cover"
             />
           </div>
@@ -183,6 +188,10 @@ export default function LandingPage() {
             <img
               src={data.hero.secondaryImage}
               alt={data.metadata.name}
+              loading="lazy"
+              decoding="async"
+              width={800}
+              height={838}
               className="w-full object-contain"
             />
           </div>
@@ -237,6 +246,10 @@ export default function LandingPage() {
               <img
                 src={data.hero.tertiaryImage}
                 alt={data.metadata.name}
+                loading="lazy"
+                decoding="async"
+                width={1170}
+                height={1555}
                 className="w-full object-contain"
               />
             </div>
