@@ -77,19 +77,19 @@ export default function LandingPage() {
           </p>
 
           {/* Hero image */}
-          <div className="rounded-none md:rounded-2xl overflow-hidden shadow-none md:shadow-xl mb-0 md:mb-4">
+          <div className="rounded-none md:rounded-2xl overflow-hidden shadow-none md:shadow-xl mb-0 md:mb-4 -mx-4 md:mx-0">
             <img
               src={data.hero.mainImage}
               alt={data.metadata.name}
               fetchPriority="high"
               width={1200}
               height={670}
-              className="block w-full h-[288px] md:h-[281px] lg:h-[338px] object-cover"
+              className="block w-full h-[288px] md:h-[281px] lg:h-[338px] object-contain md:object-cover"
             />
           </div>
 
           {/* Avatars + Star rating */}
-          <div className="flex items-center justify-center gap-2 mt-1 md:mt-8 md:order-5">
+          <div className="flex items-center justify-center gap-2 mt-1 md:mt-8 order-2 md:order-5 mb-8 md:mb-0">
             <div className="flex -space-x-2">
               {[
                 "https://i.pravatar.cc/40?img=1",
@@ -115,7 +115,7 @@ export default function LandingPage() {
           </div>
 
           {/* CTA — Large circle icons */}
-          <div className="mb-4 md:order-4">
+          <div className="mb-4 order-1 md:order-4">
             <h2
               className="text-sm md:text-2xl font-black mb-0.5 md:mb-1"
               dangerouslySetInnerHTML={{ __html: data.hero.cta.headline }}
