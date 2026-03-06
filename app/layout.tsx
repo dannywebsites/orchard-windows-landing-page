@@ -28,6 +28,8 @@ export default function RootLayout({
           href="/images/hero-main.webp"
           type="image/webp"
         />
+        <link rel="preconnect" href="https://connect.facebook.net" />
+        <link rel="dns-prefetch" href="https://connect.facebook.net" />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         {children}
