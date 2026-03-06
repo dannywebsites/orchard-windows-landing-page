@@ -1,35 +1,44 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
 import { Star } from "lucide-react";
 import { DynamicIcon } from "./DynamicIcon";
-import QuizOverlay from "./QuizOverlay";
 import data from "../TEMPLATE.json";
+
+const QuizOverlay = dynamic(() => import("./QuizOverlay"), { ssr: false });
 
 export default function LandingPage() {
   const [quizOpen, setQuizOpen] = useState(false);
 
   useEffect(() => {
-    const pixelId = data.metadata.metaPixelId;
-    if (!pixelId || pixelId === "XXXXXXXXXXXXXXXXX") return;
-    const w = window as any;
-    if (!w.fbq) {
-      const n = (w.fbq = function () {
-        // eslint-disable-next-line prefer-rest-params
-        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-      }) as any;
-      w._fbq = n;
-      n.push = n;
-      n.loaded = true;
-      n.version = "2.0";
-      n.queue = [];
-      const s = document.createElement("script");
-      s.async = true;
-      s.src = "https://connect.facebook.net/en_US/fbevents.js";
-      document.head.appendChild(s);
+    const init = () => {
+      const pixelId = data.metadata.metaPixelId;
+      if (!pixelId || pixelId === "XXXXXXXXXXXXXXXXX") return;
+      const w = window as any;
+      if (!w.fbq) {
+        const n = (w.fbq = function () {
+          // eslint-disable-next-line prefer-rest-params
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        }) as any;
+        w._fbq = n;
+        n.push = n;
+        n.loaded = true;
+        n.version = "2.0";
+        n.queue = [];
+        const s = document.createElement("script");
+        s.async = true;
+        s.src = "https://connect.facebook.net/en_US/fbevents.js";
+        document.head.appendChild(s);
+      }
+      w.fbq("init", pixelId);
+      w.fbq("track", "PageView");
+    };
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(init);
+    } else {
+      setTimeout(init, 1);
     }
-    w.fbq("init", pixelId);
-    w.fbq("track", "PageView");
   }, []);
 
   return (
@@ -57,14 +66,30 @@ export default function LandingPage() {
         </header>
 
         {/* ── Hero ── */}
-        <section className="max-w-3xl mx-auto px-4 -mt-3.5 md:-mt-4 pb-2 text-center">
+        <section className="max-w-3xl mx-auto px-4 mt-2.5 md:mt-2 pb-2 text-center flex flex-col">
           <h1
             className="text-base md:text-3xl lg:text-4xl font-black mb-1 md:mb-3 leading-tight"
             dangerouslySetInnerHTML={{ __html: data.hero.headline }}
           />
 
+          <p className="text-sm md:text-lg font-black md:font-semibold text-primary mb-1 md:mb-3">
+            Windows, Doors and Conservatories
+          </p>
+
+          {/* Hero image */}
+          <div className="rounded-2xl overflow-hidden shadow-xl mb-0 md:mb-4">
+            <img
+              src={data.hero.mainImage}
+              alt={data.metadata.name}
+              fetchPriority="high"
+              width={1200}
+              height={670}
+              className="w-full h-[288px] md:h-[281px] lg:h-[338px] object-contain md:object-cover"
+            />
+          </div>
+
           {/* Avatars + Star rating */}
-          <div className="flex items-center justify-center gap-2 mb-2 md:mb-4">
+          <div className="flex items-center justify-center gap-2 mt-1 md:mt-8 md:order-5">
             <div className="flex -space-x-2">
               {[
                 "https://i.pravatar.cc/40?img=1",
@@ -89,20 +114,8 @@ export default function LandingPage() {
             </span>
           </div>
 
-          {/* Hero image */}
-          <div className="rounded-2xl overflow-hidden shadow-xl mb-2 md:mb-6">
-            <img
-              src={data.hero.mainImage}
-              alt={data.metadata.name}
-              fetchPriority="high"
-              width={800}
-              height={447}
-              className="w-full h-[288px] md:h-[281px] lg:h-[338px] object-cover"
-            />
-          </div>
-
           {/* CTA — Large circle icons */}
-          <div className="mb-4">
+          <div className="mb-4 md:order-4">
             <h2
               className="text-sm md:text-2xl font-black mb-0.5 md:mb-1"
               dangerouslySetInnerHTML={{ __html: data.hero.cta.headline }}
@@ -158,8 +171,8 @@ export default function LandingPage() {
             </div>
           </div>
 
-          {/* ── Inline Reviews (above the fold) ── */}
-          <div className="space-y-3 mb-8">
+          {/* ── Inline Reviews (below the fold) ── */}
+          <div className="space-y-3 mb-8 md:order-7">
             {data.socialProof.reviews.slice(0, 3).map((review) => (
               <div
                 key={review.id}
@@ -184,7 +197,7 @@ export default function LandingPage() {
           </div>
 
           {/* Secondary image */}
-          <div className="rounded-2xl overflow-hidden shadow-xl mb-8">
+          <div className="rounded-2xl overflow-hidden shadow-xl mb-8 md:order-6">
             <img
               src={data.hero.secondaryImage}
               alt={data.metadata.name}

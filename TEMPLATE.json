@@ -35,7 +35,7 @@
     "secondaryImage": "/images/quiz-warmroof.webp",
     "tertiaryImage": "/images/quiz-orangery.webp",
     "cta": {
-      "headline": "<span style='color:#B89A3E'>Windows, Doors, and Conservatories</span><br/>Want a free, no-obligation home survey?",
+      "headline": "Want a free, no-obligation home survey?",
       "subtext": "Tap a button below ↓",
       "yesLabel": "YES PLEASE",
       "noLabel": "NO THANKS"
