@@ -77,14 +77,14 @@ export default function LandingPage() {
           </p>
 
           {/* Hero image */}
-          <div className="rounded-none md:rounded-2xl overflow-hidden shadow-none md:shadow-xl mb-0 md:mb-4 -mx-4 md:mx-0">
+          <div className="rounded-2xl overflow-hidden shadow-none md:shadow-xl mb-0 md:mb-4 -mx-4 md:mx-0">
             <img
               src={data.hero.mainImage}
               alt={data.metadata.name}
               fetchPriority="high"
               width={1200}
               height={670}
-              className="block w-full h-[288px] md:h-[281px] lg:h-[338px] object-contain md:object-cover"
+              className="block w-full h-auto md:h-[281px] lg:h-[338px] md:object-cover"
             />
           </div>
 
