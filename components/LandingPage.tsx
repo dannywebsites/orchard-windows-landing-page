@@ -89,7 +89,7 @@ export default function LandingPage() {
           </div>
 
           {/* Avatars + Star rating */}
-          <div className="flex items-center justify-center gap-2 mt-1 md:mt-8 order-2 md:order-5 mb-8 md:mb-0">
+          <div className="flex items-center justify-center gap-2 mt-1 md:mt-8 order-5 mb-8 md:mb-0">
             <div className="flex -space-x-2">
               {[
                 "/images/avatar-1.webp",
@@ -172,7 +172,7 @@ export default function LandingPage() {
           </div>
 
           {/* ── Mobile CTA (below stars, above reviews) ── */}
-          <div className="md:hidden text-center mb-4 order-5">
+          <div className="md:hidden text-center mb-4 order-6">
             <button
               onClick={() => setQuizOpen(true)}
               className="inline-block text-white px-10 py-4 rounded-lg font-bold text-lg transition-colors cursor-pointer w-full"
